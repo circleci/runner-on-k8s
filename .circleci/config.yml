@@ -1,0 +1,11 @@
+version: 2.1
+workflows:
+  testing:
+    jobs:
+      - runner
+jobs:
+  runner:
+    machine: true
+    resource_class: mat1g3r/my-runner-resource-class
+    steps:
+      - run: echo "Hi I'm on Runners!"
