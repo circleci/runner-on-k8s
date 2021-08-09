@@ -6,6 +6,6 @@ workflows:
 jobs:
   runner:
     docker:
-      image: alpine
+      image: [alpine]
     steps:
       - run: echo "Hi I'm on Runners!"
