@@ -5,7 +5,7 @@ workflows:
       - runner
 jobs:
   runner:
-    machine: true
-    resource_class: mat1g3r/my-runner-resource-class
+    docker:
+      - image: alpine
     steps:
       - run: echo "Hi I'm on Runners!"
