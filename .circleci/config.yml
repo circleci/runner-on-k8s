@@ -5,5 +5,7 @@ workflows:
       - runner
 jobs:
   runner:
+    docker:
+      image: alpine
     steps:
       - run: echo "Hi I'm on Runners!"
